@@ -56,3 +56,10 @@ npm install -g @nestjs/cli
 **1. Entendimiento de la arquitectura**
 
 -   Crear una aplicación llamda  **modern-art-museum**
+
+**2. Crear nuevo módulo**
+
+```bash
+    nest g mo museum
+```
+- Nota: Esto creará la carpeta src/museum y dentro de esa carpeta el archivo museum.module.ts
