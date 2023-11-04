@@ -1,27 +1,51 @@
-- Requerimientos
+# Requerimientos
 
-Node.js
-Visual Studio Code
-Postman
-Postgres
-Git
+- Node.js
+- Visual Studio Code
+- Postman
+- Postgres
+- Git 
 
-# Entorno Nest
+# Instalación de Nest
 
-1. Instalar Nest.js CLI:
+**1. Instalar Nest.js CLI**
     
-    En una nueva consola ejecute el comando:
-    $  npm install -g @nestjs/cli.
+* En una nueva consola, ejecuta el siguiente comando para instalar el CLI de Nest.js:
 
-2. Ejecute en una consola el comando:
-    $ nest
+```bash
+npm install -g @nestjs/cli
+```
 
-# Creación nueva aplicación
+**2. Verificar que Nest.js CLI haya quedo instalado correctamente:**
 
-1. Crear plantilla de proyecto:
-    $ nest new project-name $
-    Elegir
-    $ npm $
+```bash
+-   nest
+-   nest --version
+```
 
-    Nota: La aplicación genera un repo Git por default
+# Creación nueva aplicación API Rest
 
+**1. Crear plantilla de proyecto y selecciones npm (manejador de paquetes):**
+
+```bash
+    - nest new project-name
+    - npm
+```
+
+* Nota: La aplicación genera un repo Git por default.
+
+**2. Configuar la aplicación**
+
+* Crear una ruta base de los endpoints.
+
+    $/*Archivo src/main.ts */$
+
+**3. Ejecutar aplicación:**
+
+```bash
+    npm run start:dev
+```
+
+**4. Verificar que se ejecute la aplicación en el puerto:**
+
+    * $http://localhost:3000/api/v1$
