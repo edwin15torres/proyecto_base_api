@@ -72,3 +72,15 @@ npm install -g @nestjs/cli
 - Nota: Como no queremos crear un archivo de pruebas para esa clase incluimos la opción --no-spec en el comando para crear la clase.
 
 - Como queremos que la clase MuseumEntity se persista en la base de datos, necesitamos agregarle algunas anotaciones de TypeORM; por tanto necesitamos instalar la dependencia de TypeORM para NestJS. Esto se hace ejecutando el siguiente comando en consola.
+
+```bash
+    npm install --save @nestjs/typeorm typeorm
+```
+
+- las anotaciones utilizadas en la clase Museum fueron:
+
+    - **@Entity():** indica que la clase es una entidad que será mapeada a una tabla en la base de datos.
+
+    - **@PrimaryGeneratedColumn:** indica que el atributo id es la llave primaria de la clase Museum, y que el valor de esta llave se genera automáticamente. A esta anotación se le envía por parámetro el tipo de ID que se usará para la entidad, que en este caso será ‘uuid'.
+
+    - **@Column:** indica que el atributo de la clase se mapea a una columna de la tabla en la base de datos..
