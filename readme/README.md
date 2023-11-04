@@ -63,3 +63,12 @@ npm install -g @nestjs/cli
     nest g mo museum
 ```
 - Nota: Esto creará la carpeta src/museum y dentro de esa carpeta el archivo museum.module.ts
+
+**2. Crear la clase recurso "MuseumEntity"**
+
+```bash
+    nest g cl museum/museum.entity --no-spec
+```
+- Nota: Como no queremos crear un archivo de pruebas para esa clase incluimos la opción --no-spec en el comando para crear la clase.
+
+- Como queremos que la clase MuseumEntity se persista en la base de datos, necesitamos agregarle algunas anotaciones de TypeORM; por tanto necesitamos instalar la dependencia de TypeORM para NestJS. Esto se hace ejecutando el siguiente comando en consola.
