@@ -61,6 +61,12 @@ npm install -g @nestjs/cli
 
 ```bash
     nest g mo museum
+    nest g mo exhibition
+    nest g mo artwork
+    nest g mo artist
+    nest g mo image
+    nest g mo movement
+    nest g mo sponsor
 ```
 - Nota: Esto creará la carpeta src/museum y dentro de esa carpeta el archivo museum.module.ts
 
@@ -68,6 +74,10 @@ npm install -g @nestjs/cli
 
 ```bash
     nest g cl museum/museum.entity --no-spec
+    nest g cl exhibition/ --no-spec
+    nest g cl exhibition/exhibition\.entity --no-spec
+    nest g cl artwork/artwork.entity --no-spec
+    nest g cl artist/artist.artist --no-spec
 ```
 - Nota: Como no queremos crear un archivo de pruebas para esa clase incluimos la opción --no-spec en el comando para crear la clase.
 
