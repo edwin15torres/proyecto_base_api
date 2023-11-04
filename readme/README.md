@@ -49,3 +49,10 @@ npm install -g @nestjs/cli
 **4. Verificar que se ejecute la aplicación en el puerto:**
 
     * $http://localhost:3000/api/v1$
+
+
+# Tutorial Persistencia en Nest.js
+
+**1. Entendimiento de la arquitectura**
+
+-   Crear una aplicación llamda  **modern-art-museum**
